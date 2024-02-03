@@ -71,5 +71,61 @@ write.table(dataframe, "dataframe2.txt")
 
 ###########################  FUNCTIONS  ##################################
 
+function_01<-function(a,b){
+  y<-a+b
+  #print(y)
+  y
+}
+
+#calling the function
+
+function_01(10,54)
 
 
+###################  QUESTIONS  #########################
+### Q1
+
+QuadRoots<-function(a,b,c){
+  x1=(+b+sqrt(b*2-4*a*c))/2*a
+  x2=(+b-sqrt(b*2-4*a*c))/2*a
+  print(x1)
+  print(x2)
+}
+
+QuadRoots(2,3,1)
+
+### Q4
+
+#k=20
+
+vec<-c(1:20)
+sum(vec%%3==0)
+
+### Q6
+
+data3<-c(23,56,86,45,10,67)
+max<-0
+maxIndex<-0
+
+for(i in 1:length(data3)){
+  if(max<data3[i]){
+    max<-data3[i]
+    maxIndex<-i
+  }
+}
+maxIndex
+
+### Q7
+
+which.max(data3)
+
+### Q8
+
+A<-0
+moneyOwed<-function(P,R,N){
+  for(i in 1:N){
+    A = P*((1+(R/100))^i)
+    print(A)
+  }
+}
+moneyOwed(5000,11.5,15)
