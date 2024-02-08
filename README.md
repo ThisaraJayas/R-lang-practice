@@ -1,1 +1,1 @@
-R Lang
+R Language
